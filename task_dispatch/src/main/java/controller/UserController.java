@@ -34,6 +34,7 @@ public class UserController {
 	@RequestMapping("/showInfos")
 	public @ResponseBody List<TaskDispathSys> showUserInfos(){
 		LOGGER.info("查询用户全部用户");
+		logger.info("test git");
 		List<TaskDispathSys> userInfos = userService.findAll();
 		return userInfos;
 	}
